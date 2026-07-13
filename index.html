@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic Tac Toe — vs AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="stage">
+    <header>
+      <h1>⊕ Tic Tac Toe</h1>
+      <p>3목을 먼저 만들면 승리</p>
+    </header>
+
+    <section class="hud">
+      <div class="player p-x">
+        <h2>당신</h2>
+        <p>X</p>
+        <b id="winX">0</b>
+      </div>
+
+      <div class="status" id="status">시작!</div>
+
+      <div class="player p-o">
+        <h2>AI</h2>
+        <p>O</p>
+        <b id="winO">0</b>
+      </div>
+    </section>
+
+    <section class="board" id="board"></section>
+
+    <section class="actions">
+      <div class="diff">
+        <span>난이도</span>
+        <button class="lv" data-lv="easy">쉬움</button>
+        <button class="lv active" data-lv="normal">보통</button>
+        <button class="lv" data-lv="hard">미니맥스</button>
+      </div>
+      <button id="reset" class="reset">↻ 다시 시작</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
